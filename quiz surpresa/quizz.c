@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main()
@@ -7,6 +8,11 @@ int main()
     
     printf("Digite quantos alunos: ");
     scanf("%d", &qntDeAlunos);
+    
+    if(qntDeAlunos <= 0){
+        printf("Numero de alunos invalido.");
+        return 0;
+    }
     
     float notas[qntDeAlunos];
     
